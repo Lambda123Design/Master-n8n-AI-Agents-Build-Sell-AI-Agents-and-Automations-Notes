@@ -79,6 +79,40 @@ In conclusion, we have covered APIs and webhooks thoroughly. You now understand 
 
 # **C) Nodes: The Building Blocks of n8n**
 
+Hi everyone, it’s Legion Man here, and in this lecture we are going to look into the interface or platform of n8n. It’s time to say goodbye to our handy-dandy iPad. I think we’ve already covered the foundation or building blocks of n8n, and now it’s time to deep dive into the platform or interface so that you guys can get more familiarized with it.
+
+Before we begin, let me know which teaching style you prefer. For instance, I can easily pull up a PowerPoint and teach you everything, but I’ve seen that using a whiteboard and a pen—like our school teachers did with a blackboard and chalk—helps us understand concepts much better. It feels more natural and engaging. So, let me know what you think: should I continue with this whiteboard or pencil technique, or should I move on to the PowerPoint approach? Do share your thoughts in the community—I’m always looking to improve.
+
+In this lecture, let’s start by understanding nodes. Nodes are basically the atoms or building blocks of n8n. You cannot build any automation without using nodes. There are mainly three types of nodes: Entry (Trigger), Function (App/Action), and Exit Point. The entry node triggers the workflow, the function node performs an action such as interacting with apps like Google Sheets or Slack, and the exit point represents the end or final output of your automation.
+
+There are many types of nodes in n8n, including triggers, actions, data manipulation or transformation nodes, flows, files, and more. But now, let’s move to our end-to-end workflow and see all of this in action. Make sure you’re logged in or signed up with your account, and click on the Create Flow button to get started and build your first workflow inside n8n.
+
+Congratulations, you’re now on the canvas of n8n. You’ll see a “+” button, which is used to add your first trigger. Let’s get familiar with the n8n interface first. Here, you can easily save and share your automations. The editor section is where you can add nodes and actions. Once you execute your automation, you’ll be able to see the results of your workflow in the Execution tab. Don’t worry too much about that for now. You can rename your workflow (for example, “First Workflow” or “Test Workflow”), apply tags, and organize them into projects to keep everything structured within your organization.
+
+If you’re building complex automations with many nodes, n8n offers a feature to automatically organize them—just click on the structure button, and it will neatly align all the nodes in your editor.
+
+Let’s now add our first module or node, which will be the Trigger. Click on the “+” icon and choose a trigger. A trigger is always the starting point of your automation. There are three types of triggers: Manual, Schedule, and Webhook. Manual means you start the automation by clicking on it; Schedule means it runs at specific times; and Webhook means it starts automatically when an external event calls it. For now, let’s choose to trigger the automation manually.
+
+Remember, a trigger node always has an output branch but never an input branch—that’s one way to identify it. To open any node, just double-click on it. You can rename it (for example, “Test Trigger”), and you’ll see settings and parameters related to that node. You can delete nodes, activate or deactivate them, or even execute a single node without running the whole workflow.
+
+Every workflow in n8n starts with a trigger, so it’s mandatory to have one. You can easily recognize them by their Thunderbolt icon. Now, let’s talk about useful nodes. There are many, such as triggers, actions (apps), and data transformation nodes.
+
+Let’s look at actions and apps. For example, if you search for Google Sheets, you’ll find various actions like “Create Spreadsheet,” “Delete Spreadsheet,” “Get Rows,” or “Update Rows.” You can also use triggers like “On Row Updated.” So, if you don’t want to start your automation manually, you can trigger it whenever a row is updated in Google Sheets. Similarly, you can integrate with apps like Notion, Slack, or Typeform, depending on your use case.
+
+Now, let’s explore data transformation nodes. One of the most important nodes you’ll frequently use is Edit Fields (or “Set”). This node is extremely useful for optimizing workflows. For example, suppose you’re receiving “First Name” and “Last Name” from Google Sheets, but your Google Form expects a single “Full Name” field. You can use Edit Fields to merge the two and send it as one.
+
+You can also use it to filter and reduce data. For example, if you’re fetching ten rows from Google Sheets but only need the first name, you can use Edit Fields to extract only that column. This prevents unnecessary data from passing through every node and keeps your workflow efficient.
+
+Other data transformation nodes include Aggregate (to combine multiple items into a list), Remove Duplicates, Summarize, Split Out, and Limit. These help in structuring and processing your data efficiently.
+
+Now, about Webhooks—we covered this in an earlier lecture, but to recap, webhooks allow your workflow to listen to external events. When you create a webhook node, it provides a unique URL that listens for incoming data. You can test it by clicking “Listen for Test Event”, then sending a request to that URL. Once triggered, your workflow starts automatically.
+
+You can also use Edit Fields with webhooks. For instance, after connecting an Edit Fields node to a webhook, you can filter or rename the incoming data. You can use fixed values (hardcoded) or expressions (dynamic variables). After testing, you’ll see only the data you need, keeping your workflow clean and focused.
+
+Aggregator nodes, as the name suggests, combine fields from multiple items into a single list. While n8n has over 200 different nodes, you don’t need to memorize all of them—focus on understanding how they work conceptually.
+
+That’s all for this lecture. Get familiar with the n8n interface; it’s not too complex. Don’t feel overwhelmed or intimidated—if I can do it, you can do it too. Take care, and I’ll see you in the next one.
+
 # **D) How n8n Handles Data (JSON Mastery)**
 
 # **E) What are AI Agents?**
